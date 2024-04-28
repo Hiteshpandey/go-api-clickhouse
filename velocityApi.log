@@ -1,0 +1,13 @@
+{"level":"info","msg":"Listening on::8080","time":"2024-04-28T17:36:20+05:30"}
+{"level":"info","msg":"Listening on::8080","time":"2024-04-28T17:41:52+05:30"}
+INFO: Listening on::8080INFO: Listening on::8080INFO: Listening on::8080{"Error":"open env/prod.yml: no such file or directory","level":"error","msg":"An issue occurred, while reading the Enviroment from config file @velocity.go","time":"2024-04-28T22:54:24+05:30"}
+ERROR: An issue occurred, while reading the Enviroment from config file @velocity.go. Message: open env/prod.yml: no such file or directory{"Error":"dial tcp 127.0.0.1:9000: connect: connection refused","level":"error","msg":"An issue occurred, while initiating the connection  to clickhouse db @velocity.go","time":"2024-04-28T22:57:01+05:30"}
+ERROR: An issue occurred, while initiating the connection  to clickhouse db @velocity.go. Message: dial tcp 127.0.0.1:9000: connect: connection refused{"Error":"dial tcp 127.0.0.1:9000: connect: connection refused","level":"error","msg":"An issue occurred, while initiating the connection  to clickhouse db @velocity.go","time":"2024-04-28T23:00:12+05:30"}
+ERROR: An issue occurred, while initiating the connection  to clickhouse db @velocity.go. Message: dial tcp 127.0.0.1:9000: connect: connection refused{"level":"info","msg":"Listening on::8080","time":"2024-04-28T23:03:45+05:30"}
+INFO: Listening on::8080{"level":"info","msg":"Listening on::8080","time":"2024-04-28T23:13:31+05:30"}
+INFO: Listening on::8080{"level":"info","msg":"Listening on::8080","time":"2024-04-28T23:17:14+05:30"}
+INFO: Listening on::8080{"level":"info","msg":"Listening on::8080","time":"2024-04-28T23:21:22+05:30"}
+INFO: Listening on::8080{"level":"info","msg":"Listening on::8080","time":"2024-04-28T23:22:43+05:30"}
+INFO: Listening on::8080{"level":"info","msg":"Listening on::8080","time":"2024-04-28T23:48:21+05:30"}
+INFO: Listening on::8080{"level":"info","msg":"Listening on::8080","time":"2024-04-28T23:51:03+05:30"}
+INFO: Listening on::8080

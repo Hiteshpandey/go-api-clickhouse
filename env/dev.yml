@@ -1,0 +1,18 @@
+host: "localhost"
+port: 8080
+
+clickHouse:
+  host: 127.0.0.1
+  port: '9000'
+  user: default
+  pass: ''
+  database: default
+  dial_timeout: 30 #seconds for now
+  max_connection_lifetime_duration: 10 #minutes for now
+  max_execution_time: 60
+  max_open_connections: 5
+  max_idle_connections: 5
+  block_buffer_size: 10
+  max_compression_buffer: 10240
+  insecure_skip_verify: true
+  dir_path: /database/iSEnbox_failed_logs/
