@@ -17,8 +17,8 @@ func NewHandler(conn *driver.Conn, logger *logs.ApiLogger) *Handler {
 	return &Handler{clickhouseConn: conn, logger: logger}
 }
 
-func (h *Handler) RegisterRoutes(router *http.ServeMux) {
-	router.HandleFunc("GET /seeds", h.listSeeds)
+func (h *Handler) RegisterRoutes(router *http.ServeMux, prefix string) {
+	router.HandleFunc("GET /"+prefix+"/seeds", h.listSeeds)
 	// router.HandleFunc("GET /seeds/{email}", h.fetchSeed)
 }
 
@@ -26,10 +26,10 @@ func (h *Handler) listSeeds(w http.ResponseWriter, r *http.Request) {
 	exampleData := make(map[string][]string)
 	exampleData["data"] = []string{"seed1@gmail.com", "seed2@yahoo.com", "seed3@outlook.com"}
 	j, err := json.Marshal(exampleData)
+	w.Header().Set("Content-Type", "application/json")
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 	}
-	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
 	w.Write(j)
 }
